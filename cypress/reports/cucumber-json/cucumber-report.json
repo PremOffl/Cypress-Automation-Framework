@@ -1,0 +1,141 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "Pre-condition",
+        "before": [
+          {
+            "result": {
+              "duration": 19000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to the AOE Homepage",
+            "result": {
+              "duration": 3847000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "aoe--test-automation-exercise;verify-the-filter-by-keyword-funtionality",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Verify the Filter By Keyword funtionality",
+        "steps": [
+          {
+            "keyword": "When ",
+            "line": 9,
+            "name": "I navigate to the Vacancies page of the Career section",
+            "result": {
+              "duration": 3248000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 10,
+            "name": "Filter the offerings by entering \"frontend\" as keyword",
+            "result": {
+              "duration": 1610000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I verify the keyword \"frontend\" is available in the returned list",
+            "result": {
+              "duration": 225000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 12,
+            "name": "I open the first entry which is displayed",
+            "result": {
+              "duration": 5011000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I verify that the content of the job offering is been displayed and not empty",
+            "result": {
+              "duration": 38000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "after": [
+          {
+            "result": {
+              "duration": 31000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          },
+          {
+            "line": 7,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "id": "aoe--test-automation-exercise",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "AOE- Test Automation Exercise",
+    "uri": "cypress\\features\\TestExercise.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@regression"
+      }
+    ]
+  }
+]
