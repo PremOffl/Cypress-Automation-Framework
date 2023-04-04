@@ -11,7 +11,7 @@
 **Framework Folder Structure:**
 
 => Dependencies and other configuration details => package.json
-=> Feature file: cypress\e2e\TestExercise.feature
+=> Feature file: cypress\features\TestExercise.feature
 => Page Objects: cypress\support\page_objects
 => Step Definitions: cypress\support\step_definitions
 => Base URL/ Common framework information => cypress\fixtures\config.json
@@ -33,7 +33,7 @@
             and Execute "npm install cypress --save-dev"
     Step 3: Execute the tests following the below instructions.
 
-*=> Executing in Browsers (Chrome, Edge, Electron or Firefox)*
+*=> Executing All Testcases inside on feature file*
     Step 1: Open gitbash in project location
     Step 2: Execute: "npm run <profile_name>"
             Note: Profile name available under 'scripts' section in package.json file
@@ -77,4 +77,7 @@
 => Visual Studio Code (any version. Latest one preferred)
 => Browsers    : Chrome, Edge, Electron, Firefox
 
+3. **Demo Video**
+=> Please request access, so that I can share access for the account..
+    https://drive.google.com/drive/folders/1WaXFH-SN6Wfu4b8Z7lIeknEx329szCaY?usp=share_link
 
