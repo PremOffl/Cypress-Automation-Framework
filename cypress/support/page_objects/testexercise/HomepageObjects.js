@@ -1,4 +1,4 @@
-import BaseUtils from "./BaseUtils";
+import BaseUtils from "../BaseUtils";
 
 /* Object Repository
  * And Methods
@@ -8,7 +8,7 @@ class HomepageObjects extends BaseUtils {
   elements = {
     lblCareers: () =>cy.xpath("(//div[@data-qa='mobile_nav']//a[contains(@href,'career')])[1]"),
     lblVacancies: () =>cy.xpath("(//div[@data-qa='mobile_nav']//a[contains(@href,'vacancies')])[1]"),
-    btnAcceptCookies: () => cy.get('button[id="onetrust-accept-btn-handler"'),
+    btnAcceptCookies: () => cy.xpath("//button[@id='onetrust-accept-btn-handler']"),
     iconMobileNavigation: () => cy.get('a[data-qa="mobile_nav_trigger"]'),
   };
 

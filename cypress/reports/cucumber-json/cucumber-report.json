@@ -4,13 +4,14 @@
     "elements": [
       {
         "description": "",
-        "keyword": "Background",
+        "id": "checkout-flow-on-saucedemo;user-completes-purchase-successfully",
+        "keyword": "Scenario",
         "line": 4,
-        "name": "Pre-condition",
+        "name": "User completes purchase successfully",
         "before": [
           {
             "result": {
-              "duration": 19000000,
+              "duration": 79000000,
               "status": "passed"
             },
             "match": {
@@ -22,31 +23,57 @@
           {
             "keyword": "Given ",
             "line": 5,
-            "name": "I navigate to the AOE Homepage",
+            "name": "I open the SauceDemo application",
             "result": {
-              "duration": 3847000000,
+              "duration": 1441000000,
               "status": "passed"
             },
             "match": {
               "location": "not available:0"
             }
-          }
-        ],
-        "type": "background"
-      },
-      {
-        "description": "",
-        "id": "aoe--test-automation-exercise;verify-the-filter-by-keyword-funtionality",
-        "keyword": "Scenario",
-        "line": 8,
-        "name": "Verify the Filter By Keyword funtionality",
-        "steps": [
+          },
+          {
+            "keyword": "And ",
+            "line": 6,
+            "name": "I login with valid credentials",
+            "result": {
+              "duration": 1120000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
           {
             "keyword": "When ",
-            "line": 9,
-            "name": "I navigate to the Vacancies page of the Career section",
+            "line": 7,
+            "name": "I add the first product to the cart",
             "result": {
-              "duration": 3248000000,
+              "duration": 268000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 8,
+            "name": "I navigate to the cart",
+            "result": {
+              "duration": 142000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 9,
+            "name": "I proceed to checkout",
+            "result": {
+              "duration": 161000000,
               "status": "passed"
             },
             "match": {
@@ -56,9 +83,9 @@
           {
             "keyword": "And ",
             "line": 10,
-            "name": "Filter the offerings by entering \"frontend\" as keyword",
+            "name": "I enter checkout details",
             "result": {
-              "duration": 1610000000,
+              "duration": 1242000000,
               "status": "passed"
             },
             "match": {
@@ -68,33 +95,9 @@
           {
             "keyword": "Then ",
             "line": 11,
-            "name": "I verify the keyword \"frontend\" is available in the returned list",
+            "name": "the order should be placed successfully",
             "result": {
-              "duration": 225000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "not available:0"
-            }
-          },
-          {
-            "keyword": "When ",
-            "line": 12,
-            "name": "I open the first entry which is displayed",
-            "result": {
-              "duration": 5011000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "not available:0"
-            }
-          },
-          {
-            "keyword": "Then ",
-            "line": 13,
-            "name": "I verify that the content of the job offering is been displayed and not empty",
-            "result": {
-              "duration": 38000000,
+              "duration": 299000000,
               "status": "passed"
             },
             "match": {
@@ -105,7 +108,7 @@
         "after": [
           {
             "result": {
-              "duration": 31000000,
+              "duration": 59000000,
               "status": "passed"
             },
             "match": {
@@ -117,24 +120,28 @@
         "tags": [
           {
             "line": 1,
-            "name": "@regression"
+            "name": "@smoke"
           },
           {
-            "line": 7,
-            "name": "@smoke"
+            "line": 1,
+            "name": "@checkout"
           }
         ]
       }
     ],
-    "id": "aoe--test-automation-exercise",
+    "id": "checkout-flow-on-saucedemo",
     "keyword": "Feature",
     "line": 2,
-    "name": "AOE- Test Automation Exercise",
-    "uri": "cypress\\features\\TestExercise.feature",
+    "name": "Checkout flow on SauceDemo",
+    "uri": "cypress\\features\\checkout.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@regression"
+        "name": "@smoke"
+      },
+      {
+        "line": 1,
+        "name": "@checkout"
       }
     ]
   }

@@ -1,4 +1,4 @@
-import BaseUtils from "./BaseUtils";
+import BaseUtils from "../BaseUtils";
 
 /*
  *Object Repository

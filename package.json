@@ -8,25 +8,44 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "debug": "npx cypress open",
     "cy:parallel": "cypress-parallel",
-    "aoe-tests-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/features/TestExercise.feature'",
+
+    "checkout-tests-chrome": "cypress run --headed --browser chrome --spec cypress/features/checkout.feature",
+    "checkout-tests-chrome-headless": "cypress run --headless --browser chrome --spec cypress/features/checkout.feature",
+
+    "checkout-tests-edge": "cypress run --headed --browser edge --spec cypress/features/checkout.feature",
+    "checkout-tests-edge-headless": "cypress run --headless --browser edge --spec cypress/features/checkout.feature",
+
+    "checkout-tests-firefox": "cypress run --headed --browser firefox --spec cypress/features/checkout.feature",
+    "checkout-tests-firefox-headless": "cypress run --headless --browser firefox --spec cypress/features/checkout.feature",
+
+    "checkout-tests-electron": "cypress run --headed --browser electron --spec cypress/features/checkout.feature",
+    "checkout-tests-electron-headless": "cypress run --headless --browser electron --spec cypress/features/checkout.feature",
+ 
+    "checkout-smoke-tests": "cypress run --headed --spec cypress/features/checkout.feature -e TAGS=\"@smoke\"",
+    "checkout-smoke-tests-headless": "cypress run --spec cypress/features/checkout.feature -e TAGS=\"@smoke\" --headless",
+    "checkout-regression-tests": "cypress run --spec cypress/features/checkout.feature -e TAGS=\"@regression\" --headed",
+    "checkout-regression-tests-headless": "cypress run --spec cypress/features/checkout.feature -e TAGS=\"@regression\" --headless",
+
+    "aoe-tests-chrome": "npx cypress run --headed --browser chrome --spec cypress/features/TestExercise.feature",
     "aoe-tests-headless-chrome": "cypress run --headless --browser chrome --spec 'cypress/features/TestExercise.feature'",
-    "aoe-tests-headed-edge": "cypress run --headed --browser edge --spec 'cypress/features/TestExercise.feature'",
+    "aoe-tests-edge": "cypress run --headed --browser edge --spec 'cypress/features/TestExercise.feature'",
     "aoe-tests-headless-edge": "cypress run --headless --browser edge --spec 'cypress/features/TestExercise.feature'",
-    "aoe-tests-headed-electron": "cypress run --headed --browser electron --spec 'cypress/features/TestExercise.feature'",
+    "aoe-tests-electron": "cypress run --headed --browser electron --spec 'cypress/features/TestExercise.feature'",
     "aoe-tests-headless-electron": "cypress run --headless --browser electron --spec 'cypress/features/TestExercise.feature'",
-    "aoe-tests-headed-firefox": "cypress run --headed --browser firefox --spec 'cypress/features/TestExercise.feature'",
+    "aoe-tests-firefox": "cypress run --headed --browser firefox --spec 'cypress/features/TestExercise.feature'",
     "aoe-tests-headless-firefox": "cypress run --headless --browser firefox --spec 'cypress/features/TestExercise.feature'",
-    "smoke-tests-headed": "cypress run -e TAGS=\"@smoke\" --headed",
-    "smoke-tests-headless": "cypress run -e TAGS=\"@smoke\" --headless",
-    "regression-tests-headed": "cypress run -e TAGS=\"@regression\" --headed",
-    "regression-tests-headless": "cypress run -e TAGS=\"@regression\" --headless"
+    "aoe-smoke-tests": "cypress run --spec cypress/features/TestExercise.feature -e TAGS=\"@smoke\" --headed",
+    "aoe-smoke-tests-headless": "cypress run --spec cypress/features/TestExercise.feature -e TAGS=\"@smoke\" --headless",
+    "aoe-regression-tests": "cypress run --spec cypress/features/TestExercise.feature -e TAGS=\"@regression\" --headed",
+    "aoe-regression-tests-headless": "cypress run --spec cypress/features/TestExercise.feature -e TAGS=\"@regression\" --headless" 
+ 
   },
   "author": "Premnath Ayyadurai",
   "license": "ISC",
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
-    "cypress": "^12.9.0",
+    "cypress": "^10.11.0",
     "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
     "cypress-xpath": "^2.0.1",
     "multiple-cucumber-html-reporter": "^3.3.0",
@@ -111,6 +130,7 @@
     "debug": "^4.3.4",
     "define-lazy-prop": "^2.0.0",
     "delayed-stream": "^1.0.0",
+    "dotenv": "^17.2.3",
     "ecc-jsbn": "^0.1.2",
     "electron-to-chromium": "^1.4.348",
     "emoji-regex": "^8.0.0",

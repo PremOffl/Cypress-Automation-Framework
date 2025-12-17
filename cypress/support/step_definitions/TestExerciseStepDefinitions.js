@@ -1,8 +1,8 @@
 
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
-import HomepageObjects from "../page_objects/HomepageObjects";
-import JobDetailsObjects from "../page_objects/JobDetailsObjects";
-import VacanciesObjects from "../page_objects/VacanciesObjects";
+import HomepageObjects from "../page_objects/testexercise/HomepageObjects";
+import JobDetailsObjects from "../page_objects/testexercise/JobDetailsObjects";
+import VacanciesObjects from "../page_objects/testexercise/VacanciesObjects";
 
 const homePage = new HomepageObjects();
 const jobdetails = new JobDetailsObjects
